@@ -5,7 +5,7 @@ const HomePage = () => {
             <h1 className="text-5x1 font-bold tracking-tight text-orange-600">
             A MERN Food Delivery Project
             </h1>
-            <span className="text-x1">Built Using React, Node.js, MongoDB, Express</span>
+            <span className="text-x1">Built Using React, Node.js, MongoDB, Express, Auth0</span>
         </div>
     </div>
   )
