@@ -1,22 +1,29 @@
 import mongoose from "mongoose";
 
-// only auth0ID and email reuquired
+// only auth0ID and email reuquired used to create user on mongodb
 const userSchema = new mongoose.Schema({
     auth0Id: {
-        type: String,
-        required: true,
-
+      type: String,
+      required: true,
     },
     email: {
-        type: String,
+      type: String,
+     required: true,
     },
     name: {
-        type: String,
+      type: String,
+    },
+    addressLine1: {
+      type: String,
+    },
+    city: {
+      type: String,
     },
     country: {
-        type: String,
+      type: String,
     },
-});
+  });
+  
 
 // use mongoose User to interact
 const User = mongoose.model("User", userSchema)
